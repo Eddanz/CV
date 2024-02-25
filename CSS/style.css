@@ -330,6 +330,7 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .open-modal-btn:hover{
@@ -375,6 +376,7 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
 #modal-toggle2:checked + .open-modal-btn + .modal, #modal-content2,
 #modal-toggle3:checked + .open-modal-btn + .modal, #modal-content3 {
     display: block;
+    opacity: 1;
 }
 
 .close {
@@ -385,6 +387,7 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
     padding: 10px 20px;
     border-radius: 10px;
     color: white;
+    transition: background-color 0.3s ease;
 }
 
 .close:hover{
