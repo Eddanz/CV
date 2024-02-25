@@ -376,7 +376,6 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
 #modal-toggle2:checked + .open-modal-btn + .modal, #modal-content2,
 #modal-toggle3:checked + .open-modal-btn + .modal, #modal-content3 {
     display: block;
-    opacity: 1;
 }
 
 .close {
