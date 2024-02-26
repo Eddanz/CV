@@ -354,16 +354,13 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
 #modal-content1,
 #modal-content2,
 #modal-content3 {
-    position: absolute;
-    width: 500px;
-    top: 30rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    padding: 30px;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    display: none;
 }
 
 #modal-content1 p,
@@ -380,7 +377,7 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 .close {
     position: relative;
-    top: 10px;
+    top: 5px;
     cursor: pointer;
     background-color: rgb(0, 0, 0);
     padding: 10px 20px;
@@ -589,13 +586,6 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
 
     .picture-ul{
         flex-direction: column;
-    }
-
-    #modal-content1,
-    #modal-content2,
-    #modal-content3{
-        width: 300px;
-        top: 10rem;
     }
 
     /* CONTACT */
