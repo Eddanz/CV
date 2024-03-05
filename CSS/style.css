@@ -47,11 +47,18 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
     height: 100%;
 }
 
+.navbar-list-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .navbar-list-item a{
     text-decoration: none;
     color: aliceblue;
     height: max-content;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 1rem;
+    height: 100%;
     transition: background-color 0.3s ease;
 }
 
@@ -83,7 +90,7 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
 }
 
 .navbar-list-item a.active{
-    background-color: rgb(53, 53, 53);;
+    background-color: rgb(53, 53, 53);
 }
 
 .navbar-list-item a:hover{
@@ -420,6 +427,7 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
+    margin-bottom: 4rem;
     padding: 3rem;
     justify-content: center;
     font-size: x-large;
