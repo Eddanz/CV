@@ -403,7 +403,6 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
     z-index: 1;
 }
 
-
 /* CONTACT */
 .contact-body{
     background-image: url('https://images.prismic.io/visithalland2/52142491-e401-4794-9c4c-1cb1c6bca697_Varberg_Kallbadhuset_2019_Varbergskommun_DestinationVarberg_FotografNatalieGreppi_HQ-90.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max');
@@ -654,4 +653,38 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
         margin-top: 4rem;
     }
 
+}
+
+/* EASTER EGG MODAL */
+#myModal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#myModal .modal-content{
+    margin: 17% auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+@keyframes elite {
+    0% { color: red; }
+    16.7% { color: orange; }
+    33.3% { color: yellow; }
+    50% { color: green; }
+    66.6% { color: blue; }
+    83.3% { color: indigo; }
+    100% { color: violet; }
+}
+
+#myModal .modal-content .elite{
+    font-size: 5rem;
+    animation: elite 1s linear infinite;
 }
