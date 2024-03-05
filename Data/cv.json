@@ -1,0 +1,65 @@
+{
+    "education":[
+        {
+            "name": "Håstensskolan",
+            "type": "Elementary School",
+            "year": "2003 - 2013"
+        },
+        {
+            "name": "Plumbing and HVAC, Peder Skrivares Skola",
+            "type": "High School",
+            "year": "2013 - 2016"
+        },
+        {
+            "name": "Guide School, Utopia",
+            "type": "Qualified Tourist/Travel Guide",
+            "year": "2022"
+        },
+        {
+            "name": "System Development .NET, Varberg Campus",
+            "type": "Bachelor in Computer Science",
+            "year": "2023 - 2025"
+        }
+    ],
+
+    "experience":[
+        {
+            "company": "PostNord",
+            "title": "Rural mail carrier",
+            "year": "2015 June - 2019 February"
+        },
+        {
+            "company": "Derome Husproduktion",
+            "title": "Assembler and operator",
+            "year": "2019 March - 2022 February"
+        },
+        {
+            "company": "SkiStar",
+            "title": "Ski lift operator",
+            "year": "2022 November - 2023 February"
+        },
+        {
+            "company": "Crystal Ski/TUI",
+            "title": "Ski guide",
+            "year": "2023 February - 2023 April"
+        }
+    ],
+
+    "skills":[
+        {
+            "skill": "C#"
+        },
+        {
+            "skill": "SQL"
+        },
+        {
+            "skill": "HTML5"
+        },
+        {
+            "skill": "CSS3"
+        },
+        {
+            "skill": "JavaScript"
+        }
+    ]
+}
