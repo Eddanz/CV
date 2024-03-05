@@ -54,6 +54,12 @@ var videoIframe = document.getElementById("videoIframe");
 var keysPressed = [];
 
 // Function to open the modal
+var modal = document.getElementById("myModal");
+var closeButton = document.getElementsByClassName("close")[0];
+var videoIframe = document.getElementById("videoIframe");
+var nextKeyIndex = 0;
+
+// Function to open the modal
 function openModal() {
     modal.style.display = "block";
     // Start video autoplay
@@ -69,24 +75,23 @@ function closeModal() {
 
 // When the user presses a key
 window.addEventListener("keydown", function(event) {
-    // Check if the key is '1', '3', '3', '7'
-    if (event.key === '1' || event.key === '3' || event.key === '7') {
-        checkFor1337(event.key);
+    // Check if the key matches the next expected key in the sequence '1337'
+    if (event.key === '1' && nextKeyIndex === 0 ||
+        event.key === '3' && nextKeyIndex === 1 ||
+        event.key === '3' && nextKeyIndex === 2 ||
+        event.key === '7' && nextKeyIndex === 3) {
+        // Move to the next expected key index
+        nextKeyIndex++;
+        // If all keys in the sequence have been pressed, show the modal and reset the index
+        if (nextKeyIndex === 4) {
+            openModal();
+            nextKeyIndex = 0;
+        }
+    } else {
+        // If the pressed key doesn't match the expected key, reset the index
+        nextKeyIndex = 0;
     }
 });
-
-// Function to check for '1337'
-function checkFor1337(key) {
-    // Add the pressed key to the array
-    keysPressed.push(key);
-    // If the array contains '1', '3', '3', '7' in order
-    if (keysPressed.join('') === '1337') {
-        // Show the modal
-        openModal();
-        // Reset the keysPressed array
-        keysPressed = [];
-    }
-}
 
 // When the user clicks on close, close the modal
 closeButton.onclick = function() {
