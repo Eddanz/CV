@@ -536,6 +536,7 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvv
     .navbar-list-item a{
         padding: 0.5rem 0 0.5rem 0;
         display: block;
+        width: 100%;
     }
 
     .navbar-ul{
